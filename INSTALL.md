@@ -47,7 +47,7 @@ Now Jellyfin is running on http://{YOUR_LOCAL_IP}:8096/ which you can find using
 If you own a domain, you can use it to connect to the VPN instead of an IP which may change when your router restarts.
 To do this, run the following commands:
 * `mkdir /dockers/cf`
-* `cf /dockers/cf`
+* `cd /dockers/cf`
 * `nano docker-compose.yml`
 
 Inside the docker-composer.yml file, paste the following: **(Replace {YOUR_API_KEY} with the API key which can be found on the cloudflare dashboard and replace {YOUR_DOMAIN_NAME} with your domain name)**
