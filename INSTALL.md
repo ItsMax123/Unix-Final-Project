@@ -21,9 +21,9 @@ Now that we have installed docker, we can install all the pieces of software we 
 Run the following commands:
 * `mkdir /dockers/jf`
 * `cd /dockers/jf`
-* `nano docker-composer.yml`
+* `nano docker-compose.yml`
 
-Inside the docker-composer.yml file, paste the following:
+Inside the docker-compose.yml file, paste the following:
 ```yaml
 services:
   jellyfin:
@@ -50,7 +50,7 @@ To do this, run the following commands:
 * `cd /dockers/cf`
 * `nano docker-compose.yml`
 
-Inside the docker-composer.yml file, paste the following: **(Replace {YOUR_API_KEY} with the API key which can be found on the cloudflare dashboard and replace {YOUR_DOMAIN_NAME} with your domain name)**
+Inside the docker-compose.yml file, paste the following: **(Replace {YOUR_API_KEY} with the API key which can be found on the cloudflare dashboard and replace {YOUR_DOMAIN_NAME} with your domain name)**
 ```yaml
 services:
   cloudflare-ddns:
@@ -64,15 +64,15 @@ services:
 ```
 * `docker compose up -d`
 
-Now, for the next step you can use `vpn.{YOUR_DOMAIN_HERE}` instead of your IP in the docker-composer.yml file.
+Now, for the next step you can use `vpn.{YOUR_DOMAIN_HERE}` instead of your IP in the docker-compose.yml file.
 
 ## Installing WireGuard
 Run the following commands:
 * `mkdir /dockers/wg`
 * `cd /dockers/wg`
-* `nano docker-composer.yml`
+* `nano docker-compose.yml`
 
-Inside the docker-composer.yml file, paste the following: **(Replace {YOUR_LOCAL_IP} with your local IP or your domain name if you set up Cloudflare-DDNS!)**
+Inside the docker-compose.yml file, paste the following: **(Replace {YOUR_LOCAL_IP} with your local IP or your domain name if you set up Cloudflare-DDNS!)**
 ```yaml
 services:
   wg-easy:
